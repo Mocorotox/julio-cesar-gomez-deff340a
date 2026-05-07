@@ -33,7 +33,8 @@ const t = {
       role: "SEO Manager & Growth Marketing Specialist",
       tagline: "Experto en automatización, IA y estrategias digitales de alto impacto",
       badges: ["SEO Técnico", "IA & Automatización", "Growth Marketing"],
-      cta: "Hablemos",
+      intro: "Ayudo a marcas a multiplicar su tráfico orgánico y leads cualificados combinando SEO técnico, automatización con IA (n8n, Make) y estrategias de contenido data-driven. +6 años escalando proyectos en España y LATAM con resultados medibles.",
+      cta: "Hablemos por WhatsApp",
     },
     perfil: {
       title: "Perfil Profesional",
@@ -56,7 +57,8 @@ const t = {
       role: "SEO Manager & Growth Marketing Specialist",
       tagline: "Expert in automation, AI and high-impact digital strategies",
       badges: ["Technical SEO", "AI & Automation", "Growth Marketing"],
-      cta: "Let's talk",
+      intro: "I help brands multiply organic traffic and qualified leads by combining technical SEO, AI automation (n8n, Make) and data-driven content strategies. 6+ years scaling projects across Spain and LATAM with measurable results.",
+      cta: "Let's talk on WhatsApp",
     },
     perfil: {
       title: "Professional Profile",
@@ -226,8 +228,11 @@ function Index() {
           <p className="text-xl sm:text-2xl text-foreground/80 font-medium mb-4 animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
             {tr.hero.role}
           </p>
-          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-in-up" style={{ animationDelay: "0.25s" }}>
+          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto mb-6 animate-fade-in-up" style={{ animationDelay: "0.25s" }}>
             {tr.hero.tagline}
+          </p>
+          <p className="text-base sm:text-lg text-foreground/75 max-w-3xl mx-auto mb-10 leading-relaxed animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
+            {tr.hero.intro}
           </p>
 
           <div className="flex flex-wrap justify-center gap-3 mb-10 animate-fade-in-up" style={{ animationDelay: "0.35s" }}>
@@ -239,10 +244,10 @@ function Index() {
           </div>
 
           <div className="flex flex-wrap justify-center gap-4 animate-fade-in-up" style={{ animationDelay: "0.45s" }}>
-            <a href="#contacto" className="bg-gradient-primary text-primary-foreground px-7 py-3 rounded-full font-semibold shadow-glow hover:shadow-glow-strong hover:-translate-y-0.5 transition-smooth">
+            <a href="https://wa.me/584242810798" target="_blank" rel="noreferrer" className="bg-gradient-primary text-primary-foreground px-7 py-3 rounded-full font-semibold shadow-glow hover:shadow-glow-strong hover:-translate-y-0.5 transition-smooth">
               {tr.hero.cta}
             </a>
-            <a href="https://www.linkedin.com/in/julio-redacta" target="_blank" rel="noreferrer"
+            <a href="https://www.linkedin.com/julio-redacta" target="_blank" rel="noreferrer"
                className="glass px-7 py-3 rounded-full font-semibold hover:border-primary/40 hover:-translate-y-0.5 transition-smooth flex items-center gap-2">
               <Linkedin className="w-4 h-4" /> LinkedIn
             </a>
@@ -390,9 +395,9 @@ function Index() {
           <SectionTitle>{tr.contact.title}</SectionTitle>
           <p className="text-lg text-muted-foreground mb-10 max-w-2xl">{tr.contact.subtitle}</p>
           <div className="grid sm:grid-cols-2 gap-4">
-            <ContactLink icon={Phone} label="(+58) 424 281 07 98" href="tel:+584242810798" />
+            <ContactLink icon={Phone} label="WhatsApp: (+58) 424 281 07 98" href="https://wa.me/584242810798" />
             <ContactLink icon={Mail} label="gomezjulio13@gmail.com" href="mailto:gomezjulio13@gmail.com" />
-            <ContactLink icon={Linkedin} label="linkedin.com/in/julio-redacta" href="https://linkedin.com/in/julio-redacta" />
+            <ContactLink icon={Linkedin} label="linkedin.com/julio-redacta" href="https://www.linkedin.com/julio-redacta" />
             <ContactLink icon={Globe} label="behance.net/Julioredacta" href="https://behance.net/Julioredacta" />
           </div>
         </div>
