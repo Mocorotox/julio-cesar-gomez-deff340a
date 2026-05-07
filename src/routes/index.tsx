@@ -29,7 +29,7 @@ type Lang = "es" | "en";
 
 const t = {
   es: {
-    nav: { perfil: "Perfil", exp: "Experiencia", skills: "Habilidades", edu: "Educación", contact: "Contacto" },
+    nav: { perfil: "Perfil", exp: "Experiencia", skills: "Habilidades", edu: "Educación", certs: "Certificaciones", contact: "Contacto" },
     hero: {
       role: "SEO Manager & Growth Marketing Specialist",
       tagline: "Experto en automatización, IA y estrategias digitales de alto impacto",
