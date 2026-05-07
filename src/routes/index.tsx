@@ -395,9 +395,9 @@ function Index() {
           <SectionTitle>{tr.contact.title}</SectionTitle>
           <p className="text-lg text-muted-foreground mb-10 max-w-2xl">{tr.contact.subtitle}</p>
           <div className="grid sm:grid-cols-2 gap-4">
-            <ContactLink icon={Phone} label="(+58) 424 281 07 98" href="tel:+584242810798" />
+            <ContactLink icon={Phone} label="WhatsApp: (+58) 424 281 07 98" href="https://wa.me/584242810798" />
             <ContactLink icon={Mail} label="gomezjulio13@gmail.com" href="mailto:gomezjulio13@gmail.com" />
-            <ContactLink icon={Linkedin} label="linkedin.com/in/julio-redacta" href="https://linkedin.com/in/julio-redacta" />
+            <ContactLink icon={Linkedin} label="linkedin.com/julio-redacta" href="https://www.linkedin.com/julio-redacta" />
             <ContactLink icon={Globe} label="behance.net/Julioredacta" href="https://behance.net/Julioredacta" />
           </div>
         </div>
