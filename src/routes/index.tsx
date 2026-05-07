@@ -4,6 +4,7 @@ import {
   Mail, Phone, Linkedin, Globe, MapPin, ChevronDown, Sparkles,
   Search, Bot, PenTool, Palette, GraduationCap, Briefcase,
   TrendingUp, Zap, Brain, Target, Code2, BarChart3, Menu, X,
+  Award, ExternalLink,
 } from "lucide-react";
 
 export const Route = createFileRoute("/")({
