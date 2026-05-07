@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import {
   Mail, Phone, Linkedin, Globe, MapPin, ChevronDown, Sparkles,
   Search, Bot, PenTool, Palette, GraduationCap, Briefcase,
-  TrendingUp, Zap, Brain, Target, Code2, BarChart3,
+  TrendingUp, Zap, Brain, Target, Code2, BarChart3, Menu, X,
 } from "lucide-react";
 
 export const Route = createFileRoute("/")({
@@ -164,6 +164,7 @@ function Index() {
   const [lang, setLang] = useState<Lang>("es");
   const [openTimeline, setOpenTimeline] = useState<number | null>(0);
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -195,19 +196,44 @@ function Index() {
               </li>
             ))}
           </ul>
-          <div className="flex gap-1 glass rounded-lg p-1">
-            {(["es", "en"] as Lang[]).map((l) => (
-              <button
-                key={l}
-                onClick={() => setLang(l)}
-                className={`px-3 py-1.5 rounded-md text-xs font-bold uppercase tracking-wider transition-smooth ${
-                  lang === l ? "bg-gradient-primary text-primary-foreground shadow-glow" : "text-muted-foreground hover:text-primary"
-                }`}
-              >
-                {l}
-              </button>
-            ))}
+          <div className="flex items-center gap-2">
+            <div className="flex gap-1 glass rounded-lg p-1">
+              {(["es", "en"] as Lang[]).map((l) => (
+                <button
+                  key={l}
+                  onClick={() => setLang(l)}
+                  className={`px-3 py-1.5 rounded-md text-xs font-bold uppercase tracking-wider transition-smooth ${
+                    lang === l ? "bg-gradient-primary text-primary-foreground shadow-glow" : "text-muted-foreground hover:text-primary"
+                  }`}
+                >
+                  {l}
+                </button>
+              ))}
+            </div>
+            <button
+              onClick={() => setMenuOpen((v) => !v)}
+              aria-label="Menu"
+              className="md:hidden glass rounded-lg p-2 text-primary hover:shadow-glow transition-smooth"
+            >
+              {menuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+            </button>
           </div>
+        </div>
+        {/* Mobile menu */}
+        <div className={`md:hidden overflow-hidden transition-all duration-300 ease-out ${menuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}`}>
+          <ul className="glass-strong border-t border-border px-4 py-4 flex flex-col gap-1">
+            {Object.entries(tr.nav).map(([key, label]) => (
+              <li key={key}>
+                <a
+                  href={`#${key}`}
+                  onClick={() => setMenuOpen(false)}
+                  className="block px-4 py-3 rounded-lg text-sm font-medium text-foreground/80 hover:bg-primary/10 hover:text-primary transition-smooth"
+                >
+                  {label}
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
       </nav>
 
