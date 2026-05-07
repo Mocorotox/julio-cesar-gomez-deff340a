@@ -33,7 +33,8 @@ const t = {
       role: "SEO Manager & Growth Marketing Specialist",
       tagline: "Experto en automatización, IA y estrategias digitales de alto impacto",
       badges: ["SEO Técnico", "IA & Automatización", "Growth Marketing"],
-      cta: "Hablemos",
+      intro: "Ayudo a marcas a multiplicar su tráfico orgánico y leads cualificados combinando SEO técnico, automatización con IA (n8n, Make) y estrategias de contenido data-driven. +6 años escalando proyectos en España y LATAM con resultados medibles.",
+      cta: "Hablemos por WhatsApp",
     },
     perfil: {
       title: "Perfil Profesional",
