@@ -183,6 +183,41 @@ const personalSkills = {
   ],
 };
 
+const certifications = {
+  es: [
+    {
+      title: "MBA — Máster en Administración de Empresas",
+      issuer: "Escuela de Negocios",
+      date: "2024",
+      desc: "Formación ejecutiva en estrategia, finanzas, marketing y liderazgo de equipos.",
+      url: "#",
+    },
+    {
+      title: "Google Ads — Skillshop",
+      issuer: "Google",
+      date: "2025",
+      desc: "Certificación oficial en campañas de búsqueda, display y medición de conversiones.",
+      url: "https://skillshop.exceedlms.com/student/catalog/list?category_ids=4373",
+    },
+  ],
+  en: [
+    {
+      title: "MBA — Master of Business Administration",
+      issuer: "Business School",
+      date: "2024",
+      desc: "Executive training in strategy, finance, marketing and team leadership.",
+      url: "#",
+    },
+    {
+      title: "Google Ads — Skillshop",
+      issuer: "Google",
+      date: "2025",
+      desc: "Official certification in Search, Display campaigns and conversion measurement.",
+      url: "https://skillshop.exceedlms.com/student/catalog/list?category_ids=4373",
+    },
+  ],
+};
+
 function Index() {
   const [lang, setLang] = useState<Lang>("es");
   const [openTimeline, setOpenTimeline] = useState<number | null>(0);
