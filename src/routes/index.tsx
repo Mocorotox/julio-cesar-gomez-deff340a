@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import {
   Mail, Phone, Linkedin, Globe, MapPin, ChevronDown, Sparkles,
   Search, Bot, PenTool, Palette, GraduationCap, Briefcase,
-  TrendingUp, Zap, Brain, Target, Code2, BarChart3,
+  TrendingUp, Zap, Brain, Target, Code2, BarChart3, Menu, X,
 } from "lucide-react";
 
 export const Route = createFileRoute("/")({
