@@ -75,6 +75,7 @@ const t = {
     exp: { title: "Work Experience", click: "Click to expand" },
     skills: { title: "Skills", personal: "Personal Skills" },
     edu: { title: "Education" },
+    certs: { title: "Certifications", view: "View certificate" },
     contact: { title: "Contact", subtitle: "Ready to boost your digital growth?" },
   },
 };
