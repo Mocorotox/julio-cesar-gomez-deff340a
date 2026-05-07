@@ -247,7 +247,7 @@ function Index() {
             <a href="https://wa.me/584242810798" target="_blank" rel="noreferrer" className="bg-gradient-primary text-primary-foreground px-7 py-3 rounded-full font-semibold shadow-glow hover:shadow-glow-strong hover:-translate-y-0.5 transition-smooth">
               {tr.hero.cta}
             </a>
-            <a href="https://www.linkedin.com/in/julio-redacta" target="_blank" rel="noreferrer"
+            <a href="https://www.linkedin.com/julio-redacta" target="_blank" rel="noreferrer"
                className="glass px-7 py-3 rounded-full font-semibold hover:border-primary/40 hover:-translate-y-0.5 transition-smooth flex items-center gap-2">
               <Linkedin className="w-4 h-4" /> LinkedIn
             </a>
