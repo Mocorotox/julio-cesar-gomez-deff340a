@@ -54,7 +54,7 @@ const t = {
     contact: { title: "Contacto", subtitle: "¿Listo para potenciar tu crecimiento digital?" },
   },
   en: {
-    nav: { perfil: "Profile", exp: "Experience", skills: "Skills", edu: "Education", contact: "Contact" },
+    nav: { perfil: "Profile", exp: "Experience", skills: "Skills", edu: "Education", certs: "Certifications", contact: "Contact" },
     hero: {
       role: "SEO Manager & Growth Marketing Specialist",
       tagline: "Expert in automation, AI and high-impact digital strategies",
