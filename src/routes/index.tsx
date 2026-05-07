@@ -80,55 +80,75 @@ const t = {
 const experience = {
   es: [
     {
-      role: "Consultor de Marketing Digital", company: "TARBAY", date: "Abr 2025 – Presente",
+      role: "Trafficker Digital", company: "Boosty Digital", date: "Jul 2025 – Presente · Caracas (Híbrido)",
       details: [
-        "Gestión de tienda Shopify y supervisión de campañas en Meta & Google Ads.",
-        "Optimización de la estructura del sitio, contenido y landing pages para SEO y conversiones.",
-        "Implementación de rastreo con GA4/GTM y entrega de informes de rendimiento.",
+        "Gestión de campañas en Google Ads y Meta Ads para clientes B2B y eCommerce.",
+        "Análisis de métricas y dashboards en Looker Studio para toma de decisiones.",
+        "Optimización continua de CTR, CPC y conversiones en múltiples cuentas.",
       ],
     },
     {
-      role: "Gerente de SEO", company: "GRUPO PROSEIN", date: "Oct 2024 – Jun 2025",
+      role: "SEO Manager & Trafficker Digital", company: "Grupo Prosein", date: "Oct 2024 – Ago 2025 · Caracas",
       details: [
         "Liderazgo de estrategias SEO y SEM para mejorar visibilidad y generación de leads.",
         "Auditorías técnicas, investigación de palabras clave y análisis de competencia.",
-        "Gestión de Google Ads e implementación de seguimiento de conversiones con GA4 y GTM.",
-        "Definición y ejecución de estrategias de contenido y SEO on-page.",
+        "Gestión de Google Ads e implementación de seguimiento con GA4 y GTM.",
+        "Crecimiento orgánico de marcas aliadas (Mil Cerámicas) en web e Instagram.",
       ],
     },
     {
-      role: "Gerente de SEO", company: "Area10Marketing", date: "Ago 2022 – Abr 2024 · Madrid",
+      role: "Especialista en Contenidos", company: "Catena Media", date: "Oct 2023 – 2025 · Malta (Remoto)",
       details: [
-        "Ejecución de acciones SEO para múltiples cuentas de clientes.",
-        "Definición de estrategias de palabras clave y optimización de contenidos.",
-        "Preparación de informes y análisis para la mejora continua.",
+        "Redacción de guías SEO de apuestas y eSports para esportsbets.com.",
+      ],
+    },
+    {
+      role: "SEO Manager", company: "Area10 Marketing", date: "Abr 2024 – Nov 2024 · Madrid (Remoto)",
+      details: [
+        "Ejecución de estrategias SEO para múltiples cuentas de clientes.",
+      ],
+    },
+    {
+      role: "Copywriter", company: "Cosmicweb Marketing", date: "Feb 2020 – Jul 2023 · Argentina",
+      details: [
+        "Redacción web, maquetación en Elementor, descripciones de producto y blogging.",
       ],
     },
   ],
   en: [
     {
-      role: "Digital Marketing Consultant", company: "TARBAY", date: "Apr 2025 – Present",
+      role: "Digital Trafficker", company: "Boosty Digital", date: "Jul 2025 – Present · Caracas (Hybrid)",
       details: [
-        "Shopify store management and supervision of Meta & Google Ads campaigns.",
-        "Site structure, content and landing page optimization for SEO and conversions.",
-        "GA4/GTM tracking implementation and performance reporting.",
+        "Google Ads and Meta Ads campaign management for B2B and eCommerce clients.",
+        "Metrics analysis and Looker Studio dashboards for decision-making.",
+        "Ongoing optimization of CTR, CPC and conversions across multiple accounts.",
       ],
     },
     {
-      role: "SEO Manager", company: "GRUPO PROSEIN", date: "Oct 2024 – Jun 2025",
+      role: "SEO Manager & Digital Trafficker", company: "Grupo Prosein", date: "Oct 2024 – Aug 2025 · Caracas",
       details: [
         "Led SEO and SEM strategies to improve visibility and lead generation.",
         "Technical audits, keyword research and competitor analysis.",
         "Google Ads management and conversion tracking with GA4 and GTM.",
-        "Content strategy and on-page SEO definition and execution.",
+        "Organic growth of allied brands (Mil Cerámicas) on web and Instagram.",
       ],
     },
     {
-      role: "SEO Manager", company: "Area10Marketing", date: "Aug 2022 – Apr 2024 · Madrid",
+      role: "Content Specialist", company: "Catena Media", date: "Oct 2023 – 2025 · Malta (Remote)",
+      details: [
+        "SEO betting and eSports guides for esportsbets.com.",
+      ],
+    },
+    {
+      role: "SEO Manager", company: "Area10 Marketing", date: "Apr 2024 – Nov 2024 · Madrid (Remote)",
       details: [
         "SEO execution for multiple client accounts.",
-        "Keyword strategies and content optimization.",
-        "Reporting and analysis for continuous improvement.",
+      ],
+    },
+    {
+      role: "Copywriter", company: "Cosmicweb Marketing", date: "Feb 2020 – Jul 2023 · Argentina",
+      details: [
+        "Web copy, Elementor layouts, product descriptions and blogging.",
       ],
     },
   ],
