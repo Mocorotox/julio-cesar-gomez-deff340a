@@ -4,6 +4,7 @@ import {
   Mail, Phone, Linkedin, Globe, MapPin, ChevronDown, Sparkles,
   Search, Bot, PenTool, Palette, GraduationCap, Briefcase,
   TrendingUp, Zap, Brain, Target, Code2, BarChart3, Menu, X,
+  Award, ExternalLink,
 } from "lucide-react";
 
 export const Route = createFileRoute("/")({
@@ -28,7 +29,7 @@ type Lang = "es" | "en";
 
 const t = {
   es: {
-    nav: { perfil: "Perfil", exp: "Experiencia", skills: "Habilidades", edu: "Educación", contact: "Contacto" },
+    nav: { perfil: "Perfil", exp: "Experiencia", skills: "Habilidades", edu: "Educación", certs: "Certificaciones", contact: "Contacto" },
     hero: {
       role: "SEO Manager & Growth Marketing Specialist",
       tagline: "Experto en automatización, IA y estrategias digitales de alto impacto",
@@ -49,10 +50,11 @@ const t = {
     exp: { title: "Experiencia Laboral", click: "Click para expandir" },
     skills: { title: "Habilidades", personal: "Habilidades Personales" },
     edu: { title: "Educación" },
+    certs: { title: "Certificaciones", view: "Ver certificado" },
     contact: { title: "Contacto", subtitle: "¿Listo para potenciar tu crecimiento digital?" },
   },
   en: {
-    nav: { perfil: "Profile", exp: "Experience", skills: "Skills", edu: "Education", contact: "Contact" },
+    nav: { perfil: "Profile", exp: "Experience", skills: "Skills", edu: "Education", certs: "Certifications", contact: "Contact" },
     hero: {
       role: "SEO Manager & Growth Marketing Specialist",
       tagline: "Expert in automation, AI and high-impact digital strategies",
@@ -73,6 +75,7 @@ const t = {
     exp: { title: "Work Experience", click: "Click to expand" },
     skills: { title: "Skills", personal: "Personal Skills" },
     edu: { title: "Education" },
+    certs: { title: "Certifications", view: "View certificate" },
     contact: { title: "Contact", subtitle: "Ready to boost your digital growth?" },
   },
 };
@@ -177,6 +180,41 @@ const personalSkills = {
     { icon: Zap, label: "Time management" },
     { icon: Brain, label: "Teamwork" },
     { icon: TrendingUp, label: "Fast learner" },
+  ],
+};
+
+const certifications = {
+  es: [
+    {
+      title: "MBA — Máster en Administración de Empresas",
+      issuer: "Escuela de Negocios",
+      date: "2024",
+      desc: "Formación ejecutiva en estrategia, finanzas, marketing y liderazgo de equipos.",
+      url: "#",
+    },
+    {
+      title: "Google Ads — Skillshop",
+      issuer: "Google",
+      date: "2025",
+      desc: "Certificación oficial en campañas de búsqueda, display y medición de conversiones.",
+      url: "https://skillshop.exceedlms.com/student/catalog/list?category_ids=4373",
+    },
+  ],
+  en: [
+    {
+      title: "MBA — Master of Business Administration",
+      issuer: "Business School",
+      date: "2024",
+      desc: "Executive training in strategy, finance, marketing and team leadership.",
+      url: "#",
+    },
+    {
+      title: "Google Ads — Skillshop",
+      issuer: "Google",
+      date: "2025",
+      desc: "Official certification in Search, Display campaigns and conversion measurement.",
+      url: "https://skillshop.exceedlms.com/student/catalog/list?category_ids=4373",
+    },
   ],
 };
 
@@ -431,6 +469,42 @@ function Index() {
               </p>
               <p className="text-sm text-muted-foreground/70 mt-2 font-mono">Universidad Católica Santa Rosa</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CERTIFICACIONES */}
+      <section id="certs" className="py-24 relative">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <SectionTitle>{tr.certs.title}</SectionTitle>
+          <div className="grid md:grid-cols-2 gap-6">
+            {certifications[lang].map((c, i) => (
+              <a
+                key={i}
+                href={c.url}
+                target={c.url.startsWith("http") ? "_blank" : undefined}
+                rel={c.url.startsWith("http") ? "noreferrer" : undefined}
+                className="group glass rounded-2xl p-7 hover:shadow-card-hover hover:-translate-y-2 transition-smooth animate-fade-in-up relative overflow-hidden flex flex-col"
+                style={{ animationDelay: `${i * 0.1}s` }}
+              >
+                <div className="absolute -top-12 -right-12 w-32 h-32 rounded-full opacity-0 group-hover:opacity-100 transition-smooth"
+                     style={{ background: "radial-gradient(circle, oklch(0.62 0.18 275 / 0.25), transparent 70%)" }} />
+                <div className="flex items-start gap-4 mb-4 relative">
+                  <div className="w-12 h-12 shrink-0 rounded-xl bg-gradient-primary flex items-center justify-center shadow-glow">
+                    <Award className="w-6 h-6 text-primary-foreground" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-lg font-display font-bold text-gradient leading-tight">{c.title}</h3>
+                    <p className="text-sm text-foreground/80 mt-1">{c.issuer}</p>
+                  </div>
+                  <span className="text-xs font-mono text-muted-foreground shrink-0">{c.date}</span>
+                </div>
+                <p className="text-sm text-muted-foreground leading-relaxed mb-5 relative">{c.desc}</p>
+                <span className="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-primary group-hover:gap-3 transition-all relative">
+                  {tr.certs.view} <ExternalLink className="w-4 h-4" />
+                </span>
+              </a>
+            ))}
           </div>
         </div>
       </section>
