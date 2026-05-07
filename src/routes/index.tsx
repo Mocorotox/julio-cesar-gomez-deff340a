@@ -164,6 +164,7 @@ function Index() {
   const [lang, setLang] = useState<Lang>("es");
   const [openTimeline, setOpenTimeline] = useState<number | null>(0);
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
