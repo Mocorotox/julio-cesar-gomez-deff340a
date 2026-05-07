@@ -473,6 +473,42 @@ function Index() {
         </div>
       </section>
 
+      {/* CERTIFICACIONES */}
+      <section id="certs" className="py-24 relative">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <SectionTitle>{tr.certs.title}</SectionTitle>
+          <div className="grid md:grid-cols-2 gap-6">
+            {certifications[lang].map((c, i) => (
+              <a
+                key={i}
+                href={c.url}
+                target={c.url.startsWith("http") ? "_blank" : undefined}
+                rel={c.url.startsWith("http") ? "noreferrer" : undefined}
+                className="group glass rounded-2xl p-7 hover:shadow-card-hover hover:-translate-y-2 transition-smooth animate-fade-in-up relative overflow-hidden flex flex-col"
+                style={{ animationDelay: `${i * 0.1}s` }}
+              >
+                <div className="absolute -top-12 -right-12 w-32 h-32 rounded-full opacity-0 group-hover:opacity-100 transition-smooth"
+                     style={{ background: "radial-gradient(circle, oklch(0.62 0.18 275 / 0.25), transparent 70%)" }} />
+                <div className="flex items-start gap-4 mb-4 relative">
+                  <div className="w-12 h-12 shrink-0 rounded-xl bg-gradient-primary flex items-center justify-center shadow-glow">
+                    <Award className="w-6 h-6 text-primary-foreground" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-lg font-display font-bold text-gradient leading-tight">{c.title}</h3>
+                    <p className="text-sm text-foreground/80 mt-1">{c.issuer}</p>
+                  </div>
+                  <span className="text-xs font-mono text-muted-foreground shrink-0">{c.date}</span>
+                </div>
+                <p className="text-sm text-muted-foreground leading-relaxed mb-5 relative">{c.desc}</p>
+                <span className="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-primary group-hover:gap-3 transition-all relative">
+                  {tr.certs.view} <ExternalLink className="w-4 h-4" />
+                </span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CONTACT */}
       <section id="contact" className="py-24 relative">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
