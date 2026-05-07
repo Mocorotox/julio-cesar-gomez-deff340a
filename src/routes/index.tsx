@@ -228,8 +228,11 @@ function Index() {
           <p className="text-xl sm:text-2xl text-foreground/80 font-medium mb-4 animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
             {tr.hero.role}
           </p>
-          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-in-up" style={{ animationDelay: "0.25s" }}>
+          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto mb-6 animate-fade-in-up" style={{ animationDelay: "0.25s" }}>
             {tr.hero.tagline}
+          </p>
+          <p className="text-base sm:text-lg text-foreground/75 max-w-3xl mx-auto mb-10 leading-relaxed animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
+            {tr.hero.intro}
           </p>
 
           <div className="flex flex-wrap justify-center gap-3 mb-10 animate-fade-in-up" style={{ animationDelay: "0.35s" }}>
@@ -241,7 +244,7 @@ function Index() {
           </div>
 
           <div className="flex flex-wrap justify-center gap-4 animate-fade-in-up" style={{ animationDelay: "0.45s" }}>
-            <a href="#contacto" className="bg-gradient-primary text-primary-foreground px-7 py-3 rounded-full font-semibold shadow-glow hover:shadow-glow-strong hover:-translate-y-0.5 transition-smooth">
+            <a href="https://wa.me/584242810798" target="_blank" rel="noreferrer" className="bg-gradient-primary text-primary-foreground px-7 py-3 rounded-full font-semibold shadow-glow hover:shadow-glow-strong hover:-translate-y-0.5 transition-smooth">
               {tr.hero.cta}
             </a>
             <a href="https://www.linkedin.com/in/julio-redacta" target="_blank" rel="noreferrer"
