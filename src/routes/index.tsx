@@ -50,6 +50,7 @@ const t = {
     exp: { title: "Experiencia Laboral", click: "Click para expandir" },
     skills: { title: "Habilidades", personal: "Habilidades Personales" },
     edu: { title: "Educación" },
+    certs: { title: "Certificaciones", view: "Ver certificado" },
     contact: { title: "Contacto", subtitle: "¿Listo para potenciar tu crecimiento digital?" },
   },
   en: {
