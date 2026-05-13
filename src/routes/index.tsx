@@ -105,17 +105,17 @@ const portfolioData = {
 
 const experience = {
   es: [
-    { role: "Líder de Tráfico (Contratación)", company: "TARBAY", date: "Oct 2025 – Abr 2026 · Remoto", details: ["Liderazgo del área de tráfico digital para campañas de adquisición.", "Gestión y optimización de campañas en Google Ads y Meta Ads.", "Reporting y dashboards de performance para toma de decisiones."] },
-    { role: "Trafficker Digital", company: "Boosty Digital", date: "Oct 2025 · Caracas (Híbrido)", details: ["Gestión de campañas en Google Ads y Meta Ads para clientes B2B y eCommerce.", "Análisis de métricas y dashboards en Looker Studio para toma de decisiones.", "Optimización continua de CTR, CPC y conversiones en múltiples cuentas."] },
-    { role: "SEO Manager & Trafficker Digital", company: "Grupo Prosein", date: "Oct 2024 – Ago 2025 · Caracas", details: ["Liderazgo de estrategias SEO y SEM para mejorar visibilidad y generación de leads.", "Auditorías técnicas, investigación de palabras clave y análisis de competencia.", "Gestión de Google Ads e implementación de seguimiento con GA4 y GTM.", "Crecimiento orgánico de marcas aliadas (Mil Cerámicas) en web e Instagram."] },
+    { role: "Líder de Tráfico", company: "TARBAY", date: "Oct 2025 – Abr 2026 · Remoto (Contratación)", details: ["Liderazgo del área de tráfico digital para campañas de adquisición.", "Gestión y optimización de campañas en Google Ads y Meta Ads.", "Reporting y dashboards de performance para toma de decisiones."] },
+    { role: "Trafficker Digital", company: "Boosty Digital", date: "Jul 2025 – Ago 2025 · Caracas (Híbrido)", details: ["Gestión de campañas en Google Ads y Meta Ads para clientes B2B y eCommerce.", "Análisis de métricas y dashboards en Looker Studio para toma de decisiones.", "Optimización continua de CTR, CPC y conversiones en múltiples cuentas."] },
+    { role: "SEO Manager & Trafficker Digital", company: "Grupo Prosein", date: "Oct 2024 – Jul 2025 · Caracas", details: ["Liderazgo de estrategias SEO y SEM para mejorar visibilidad y generación de leads.", "Auditorías técnicas, investigación de palabras clave y análisis de competencia.", "Gestión de Google Ads e implementación de seguimiento con GA4 y GTM.", "Crecimiento orgánico de marcas aliadas (Mil Cerámicas) en web e Instagram."] },
     { role: "Especialista en Contenidos", company: "Catena Media", date: "Oct 2023 – 2025 · Malta (Remoto)", details: ["Redacción de guías SEO de apuestas y eSports para esportsbets.com."] },
     { role: "SEO Manager", company: "Area10 Marketing", date: "Abr 2024 – Nov 2024 · Madrid (Remoto)", details: ["Ejecución de estrategias SEO para múltiples cuentas de clientes."] },
     { role: "Copywriter", company: "Cosmicweb Marketing", date: "Feb 2020 – Jul 2023 · Argentina", details: ["Redacción web, maquetación en Elementor, descripciones de producto y blogging."] },
   ],
   en: [
-    { role: "Traffic Lead (Contract)", company: "TARBAY", date: "Oct 2025 – Apr 2026 · Remote", details: ["Led the digital traffic area for acquisition campaigns.", "Managed and optimized Google Ads and Meta Ads campaigns.", "Performance reporting and dashboards for decision-making."] },
-    { role: "Digital Trafficker", company: "Boosty Digital", date: "Oct 2025 · Caracas (Hybrid)", details: ["Google Ads and Meta Ads campaign management for B2B and eCommerce clients.", "Metrics analysis and Looker Studio dashboards for decision-making.", "Ongoing optimization of CTR, CPC and conversions across multiple accounts."] },
-    { role: "SEO Manager & Digital Trafficker", company: "Grupo Prosein", date: "Oct 2024 – Aug 2025 · Caracas", details: ["Led SEO and SEM strategies to improve visibility and lead generation.", "Technical audits, keyword research and competitor analysis.", "Google Ads management and conversion tracking with GA4 and GTM.", "Organic growth of allied brands (Mil Cerámicas) on web and Instagram."] },
+    { role: "Traffic Lead", company: "TARBAY", date: "Oct 2025 – Apr 2026 · Remote (Contract)", details: ["Led the digital traffic area for acquisition campaigns.", "Managed and optimized Google Ads and Meta Ads campaigns.", "Performance reporting and dashboards for decision-making."] },
+    { role: "Digital Trafficker", company: "Boosty Digital", date: "Jul 2025 – Aug 2025 · Caracas (Hybrid)", details: ["Google Ads and Meta Ads campaign management for B2B and eCommerce clients.", "Metrics analysis and Looker Studio dashboards for decision-making.", "Ongoing optimization of CTR, CPC and conversions across multiple accounts."] },
+    { role: "SEO Manager & Digital Trafficker", company: "Grupo Prosein", date: "Oct 2024 – Jul 2025 · Caracas", details: ["Led SEO and SEM strategies to improve visibility and lead generation.", "Technical audits, keyword research and competitor analysis.", "Google Ads management and conversion tracking with GA4 and GTM.", "Organic growth of allied brands (Mil Cerámicas) on web and Instagram."] },
     { role: "Content Specialist", company: "Catena Media", date: "Oct 2023 – 2025 · Malta (Remote)", details: ["SEO betting and eSports guides for esportsbets.com."] },
     { role: "SEO Manager", company: "Area10 Marketing", date: "Apr 2024 – Nov 2024 · Madrid (Remote)", details: ["SEO execution for multiple client accounts."] },
     { role: "Copywriter", company: "Cosmicweb Marketing", date: "Feb 2020 – Jul 2023 · Argentina", details: ["Web copy, Elementor layouts, product descriptions and blogging."] },
@@ -276,14 +276,14 @@ function Index() {
 
           <div className="flex flex-wrap items-center justify-center gap-3">
             <a
-              href="https://wa.me/584140000000"
+              href="https://wa.me/584242810798"
               target="_blank" rel="noreferrer"
               className="inline-flex items-center gap-2 bg-gradient-primary text-primary-foreground font-semibold px-6 py-3 rounded-xl shadow-glow hover:shadow-glow-strong transition-smooth"
             >
               <Phone size={18} /> {tr.hero.cta}
             </a>
             <a
-              href="https://www.linkedin.com/in/juliocesargomezsanz/"
+              href="https://www.linkedin.com/in/julio-redacta/"
               target="_blank" rel="noreferrer"
               className="inline-flex items-center gap-2 glass rounded-xl px-6 py-3 text-sm font-semibold text-foreground hover:text-primary hover:shadow-glow transition-smooth"
             >
@@ -518,8 +518,8 @@ function Index() {
           <p className="text-muted-foreground mb-10">{tr.contact.subtitle}</p>
           <div className="grid sm:grid-cols-2 gap-3">
             <ContactLink icon={Mail} label="gomezjulio13@gmail.com" href="mailto:gomezjulio13@gmail.com" />
-            <ContactLink icon={Phone} label="+58 414 000 0000" href="https://wa.me/584140000000" />
-            <ContactLink icon={Linkedin} label="LinkedIn" href="https://www.linkedin.com/in/juliocesargomezsanz/" />
+            <ContactLink icon={Phone} label="+58 424 281 0798" href="https://wa.me/584242810798" />
+            <ContactLink icon={Linkedin} label="LinkedIn" href="https://www.linkedin.com/in/julio-redacta/" />
             <ContactLink icon={MapPin} label="Caracas, Venezuela" href="#" />
           </div>
         </div>
