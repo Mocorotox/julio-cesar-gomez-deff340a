@@ -31,7 +31,7 @@ const t = {
   es: {
     nav: { perfil: "Perfil", exp: "Experiencia", portafolio: "Portafolio", skills: "Habilidades", edu: "Educación", certs: "Certificaciones", contact: "Contacto" },
     hero: {
-      role: "SEO Manager & Growth Marketing Specialist",
+      role: "Shopify Manager @ Entrehumos.com · SEO & Growth Marketing",
       tagline: "Experto en automatización, IA y estrategias digitales de alto impacto",
       badges: ["SEO Técnico", "IA & Automatización", "Growth Marketing"],
       intro: "Ayudo a marcas a multiplicar su tráfico orgánico y leads cualificados combinando SEO técnico, automatización con IA (n8n, Make) y estrategias de contenido data-driven. +6 años escalando proyectos en España y LATAM con resultados medibles.",
@@ -39,7 +39,7 @@ const t = {
     },
     perfil: {
       title: "Perfil Profesional",
-      body: "Profesional en SEO y Growth Marketing con 6 años de experiencia ayudando a marcas a mejorar su visibilidad online. Especializado en SEO técnico, optimización de contenidos y seguimiento de rendimiento utilizando GA4, GSC, GTM, SEMrush y Looker Studio. Experto en automatización de procesos con n8n y Make, combinando inteligencia artificial generativa para la creación de contenido y elaboración de prompts efectivos.",
+      body: "Actualmente soy Shopify Manager en Entrehumos.com. Profesional en SEO y Growth Marketing con 6 años de experiencia ayudando a marcas a mejorar su visibilidad online. Especializado en SEO técnico, optimización de contenidos y seguimiento de rendimiento utilizando GA4, GSC, GTM, SEMrush y Looker Studio. Experto en automatización de procesos con n8n y Make, combinando inteligencia artificial generativa para la creación de contenido y elaboración de prompts efectivos.",
       stats: [
         { value: "6+", label: "Años de experiencia" },
         { value: "30+", label: "Proyectos SEO" },
@@ -57,7 +57,7 @@ const t = {
   en: {
     nav: { perfil: "Profile", exp: "Experience", portafolio: "Portfolio", skills: "Skills", edu: "Education", certs: "Certifications", contact: "Contact" },
     hero: {
-      role: "SEO Manager & Growth Marketing Specialist",
+      role: "Shopify Manager @ Entrehumos.com · SEO & Growth Marketing",
       tagline: "Expert in automation, AI and high-impact digital strategies",
       badges: ["Technical SEO", "AI & Automation", "Growth Marketing"],
       intro: "I help brands multiply organic traffic and qualified leads by combining technical SEO, AI automation (n8n, Make) and data-driven content strategies. 6+ years scaling projects across Spain and LATAM with measurable results.",
@@ -65,7 +65,7 @@ const t = {
     },
     perfil: {
       title: "Professional Profile",
-      body: "SEO and Growth Marketing professional with 6 years of experience helping brands improve their online visibility. Specialized in technical SEO, content optimization and performance tracking using GA4, GSC, GTM, SEMrush and Looker Studio. Expert in process automation with n8n and Make, combining generative AI for content creation and effective prompt engineering.",
+      body: "Currently Shopify Manager at Entrehumos.com. SEO and Growth Marketing professional with 6 years of experience helping brands improve their online visibility. Specialized in technical SEO, content optimization and performance tracking using GA4, GSC, GTM, SEMrush and Looker Studio. Expert in process automation with n8n and Make, combining generative AI for content creation and effective prompt engineering.",
       stats: [
         { value: "6+", label: "Years of experience" },
         { value: "30+", label: "SEO projects" },
@@ -105,6 +105,7 @@ const portfolioData = {
 
 const experience = {
   es: [
+    { role: "Shopify Manager", company: "Entrehumos.com", date: "Actualidad · Remoto", details: ["Gestión integral de la tienda Shopify: catálogo, conversiones y experiencia de compra.", "Optimización SEO y de tráfico para impulsar ventas en e-commerce.", "Análisis de métricas y mejora continua del funnel."] },
     { role: "Asesor de Tráfico Digital", company: "Click and Sell INC", date: "Ene 2026 – May 2026 · Remoto (EE.UU.)", details: ["Asesoría y supervisión de 2 media buyers junior en campañas de Google Ads y Meta Ads.", "Gestión de cuentas: 3 Brothers Construction, MH Home Solutions e Ideal Garden.", "Revisión de estrategias, optimización de presupuestos y control de KPIs para mercado estadounidense."] },
     { role: "Líder de Tráfico", company: "TARBAY", date: "Oct 2025 – Feb 2026 · Remoto (Contratación)", details: ["Liderazgo del área de tráfico digital para campañas de adquisición.", "Gestión y optimización de campañas en Google Ads y Meta Ads.", "Reporting y dashboards de performance para toma de decisiones."] },
     { role: "Trafficker Digital", company: "Boosty Digital", date: "Jul 2025 – Ago 2025 · Caracas (Híbrido)", details: ["Gestión de campañas en Google Ads y Meta Ads para clientes B2B y eCommerce.", "Análisis de métricas y dashboards en Looker Studio para toma de decisiones.", "Optimización continua de CTR, CPC y conversiones en múltiples cuentas."] },
@@ -114,6 +115,7 @@ const experience = {
     { role: "Copywriter", company: "Cosmicweb Marketing", date: "Feb 2020 – Jul 2023 · Argentina", details: ["Redacción web, maquetación en Elementor, descripciones de producto y blogging."] },
   ],
   en: [
+    { role: "Shopify Manager", company: "Entrehumos.com", date: "Present · Remote", details: ["Full management of the Shopify store: catalog, conversions and shopping experience.", "SEO and traffic optimization to drive e-commerce sales.", "Metrics analysis and continuous funnel improvement."] },
     { role: "Digital Traffic Advisor", company: "Click and Sell INC", date: "Jan 2026 – May 2026 · Remote (USA)", details: ["Advised and supervised 2 junior media buyers on Google Ads and Meta Ads campaigns.", "Managed accounts: 3 Brothers Construction, MH Home Solutions and Ideal Garden.", "Reviewed strategies, optimized budgets and controlled KPIs for the US market."] },
     { role: "Traffic Lead", company: "TARBAY", date: "Oct 2025 – Feb 2026 · Remote (Contract)", details: ["Led the digital traffic area for acquisition campaigns.", "Managed and optimized Google Ads and Meta Ads campaigns.", "Performance reporting and dashboards for decision-making."] },
     { role: "Digital Trafficker", company: "Boosty Digital", date: "Jul 2025 – Aug 2025 · Caracas (Hybrid)", details: ["Google Ads and Meta Ads campaign management for B2B and eCommerce clients.", "Metrics analysis and Looker Studio dashboards for decision-making.", "Ongoing optimization of CTR, CPC and conversions across multiple accounts."] },
@@ -413,6 +415,20 @@ function Index() {
                 </article>
               );
             })}
+          </div>
+        </div>
+      </section>
+
+      {/* MÉTRICAS */}
+      <section id="metricas" className="px-4 md:px-8 py-20">
+        <div className="max-w-4xl mx-auto">
+          <div className="glass rounded-3xl p-8 md:p-12 shadow-elevated text-center hover:shadow-glow transition-smooth animate-fade-in-up">
+            <p className="font-mono text-xs uppercase tracking-[0.25em] text-primary mb-4">{lang === "es" ? "Resultados reales" : "Real results"}</p>
+            <h2 className="font-display text-3xl md:text-4xl font-extrabold text-gradient-light mb-4">{lang === "es" ? "¿Quieres ver métricas y presupuestos?" : "Want to see metrics and budgets?"}</h2>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-8 max-w-2xl mx-auto">{lang === "es" ? "Revisa mis proyectos en esta carpeta, con datos sólidos como CTR, inversión y marcas específicas que he gestionado." : "Browse my projects in this folder, with solid data such as CTR, ad spend and the specific brands I've managed."}</p>
+            <a href="https://drive.google.com/drive/folders/1gh0_mbXbwJJ3gHVSLXVtmOq8nSPP53qu" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground px-7 py-3.5 font-semibold shadow-glow hover:scale-105 transition-smooth">
+              {lang === "es" ? "Ver carpeta de proyectos" : "Open projects folder"} →
+            </a>
           </div>
         </div>
       </section>
