@@ -176,3 +176,25 @@
     background-size: 50px 50px;
   }
 }
+
+@media print {
+  @page { size: A4; margin: 12mm; }
+  :root {
+    --background: #ffffff; --foreground: #111827; --card: #ffffff; --card-foreground: #111827;
+    --primary: #0e7490; --accent: #4338ca; --muted-foreground: #4b5563; --border: #d1d5db;
+    --primary-foreground: #ffffff;
+  }
+  html { font-size: 12px; }
+  body { background: #fff !important; color: #111827 !important; }
+  * { animation: none !important; transition: none !important; box-shadow: none !important; text-shadow: none !important; }
+  .fixed, .bg-gradient-hero, .grid-bg { display: none !important; }
+  .glass, .glass-strong { background: #fff !important; backdrop-filter: none !important; -webkit-backdrop-filter: none !important; border: 1px solid #d1d5db !important; }
+  .text-gradient, .text-gradient-light { background: none !important; -webkit-text-fill-color: currentColor !important; color: #111827 !important; }
+  .bg-gradient-primary { background: #0e7490 !important; color: #fff !important; }
+  section { padding-top: 1rem !important; padding-bottom: 1rem !important; }
+  #top { padding-top: 0 !important; }
+  .glass, li, h2, h3 { break-inside: avoid; }
+  button, a[href^="https://wa.me"] { print-color-adjust: exact; }
+  #top button, #metricas a { display: none !important; }
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}

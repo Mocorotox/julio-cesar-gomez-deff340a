@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import {
-  Mail, Phone, Linkedin, Globe, MapPin, ChevronDown, Sparkles,
+  Mail, Phone, Download, Linkedin, Globe, MapPin, ChevronDown, Sparkles,
   Search, Bot, PenTool, Palette, GraduationCap, Briefcase,
   TrendingUp, Zap, Brain, Target, BarChart3, Menu, X,
   Award, ExternalLink, Rocket, LineChart, ShieldCheck,
@@ -187,7 +187,7 @@ function Index() {
       <div className="fixed inset-0 grid-bg opacity-40 -z-10" />
 
       {/* NAV */}
-      <header className={`fixed top-0 inset-x-0 z-50 transition-smooth ${scrolled ? "glass-strong shadow-elevated" : ""}`}>
+      <header className={`print:hidden fixed top-0 inset-x-0 z-50 transition-smooth ${scrolled ? "glass-strong shadow-elevated" : ""}`}>
         <div className="max-w-7xl mx-auto px-4 md:px-8 py-4 flex items-center justify-between gap-4">
           <a href="#top" className="font-display font-extrabold text-xl tracking-tight text-gradient">JCG</a>
 
@@ -213,6 +213,13 @@ function Index() {
                 </button>
               ))}
             </div>
+            <button
+              onClick={() => window.print()}
+              aria-label={lang === "es" ? "Descargar CV en PDF" : "Download CV as PDF"}
+              className="print:hidden glass rounded-lg px-3 py-2 text-xs font-bold uppercase tracking-wider text-primary hover:shadow-glow transition-smooth inline-flex items-center gap-1.5"
+            >
+              <Download size={14} /> <span className="hidden sm:inline">{lang === "es" ? "CV PDF" : "CV PDF"}</span>
+            </button>
             <button
               onClick={() => setMenuOpen((v) => !v)}
               aria-label="Menu"
@@ -286,6 +293,12 @@ function Index() {
             >
               <Phone size={18} /> {tr.hero.cta}
             </a>
+            <button
+              onClick={() => window.print()}
+              className="inline-flex items-center gap-2 glass rounded-xl px-6 py-3 text-sm font-semibold text-foreground hover:text-primary hover:shadow-glow transition-smooth"
+            >
+              <Download size={18} /> {lang === "es" ? "Descargar CV (PDF)" : "Download CV (PDF)"}
+            </button>
             <a
               href="https://www.linkedin.com/in/julio-redacta/"
               target="_blank" rel="noreferrer"
@@ -349,8 +362,8 @@ function Index() {
                       </div>
                     </div>
 
-                    {open && (
-                      <ul className="mt-5 space-y-2 animate-fade-in">
+                    {(
+                      <ul className={`mt-5 space-y-2 animate-fade-in ${open ? "" : "hidden print:block"}`}>
                         {item.details.map((d, j) => (
                           <li key={j} className="text-sm text-foreground/80 leading-relaxed">
                             <span className="text-primary mr-2">▹</span>{d}
