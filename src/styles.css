@@ -195,6 +195,7 @@
   #top { padding-top: 0 !important; }
   .glass, li, h2, h3 { break-inside: avoid; }
   button, a[href^="https://wa.me"] { print-color-adjust: exact; }
-  #top button, #metricas a { display: none !important; }
+  #top button, footer { display: none !important; }
+  #metricas a::after { content: " — drive.google.com/drive/folders/1gh0_mbXbwJJ3gHVSLXVtmOq8nSPP53qu"; font-weight: 400; font-size: 9px; }
   * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 }
